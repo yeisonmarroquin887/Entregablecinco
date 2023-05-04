@@ -2,7 +2,7 @@ import React, { useEffect, useRef} from 'react'
 import {useNavigate } from 'react-router-dom'
 import usefetch from '../hooks/useFetch'
 
-const Frompokes = () => {
+const Frompokes = ({setform}) => {
     
     
     
@@ -21,7 +21,7 @@ const Frompokes = () => {
         
  }
  const handelchange = e => {
-  console.log(e.target.value)
+  setform(e.target.value)
  }
 
   return (
