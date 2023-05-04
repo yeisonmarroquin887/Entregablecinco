@@ -19,14 +19,14 @@ const LocationPoke = () => {
 
   return (
     <div className="pokess">
-      <div className="margen">
-        <div className="rojo">
+      <div className="margenn">
+        <div className="rojoo">
      
-          <img className="margen_img" src="./image/Podex.png" alt="" />
+          <img className="margen__img" src="./image/Podex.png" alt="" />
         </div>
-        <div className="padre">
-           <div className="bola2">
-            <div className="bola"> <div className="bol"></div> </div>
+        <div className="padree">
+           <div className="bola22">
+            <div className="bolaa"> <div className="bol"></div> </div>
            </div>
           </div>
         
