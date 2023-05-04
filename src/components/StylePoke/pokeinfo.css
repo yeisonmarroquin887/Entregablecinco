@@ -58,7 +58,7 @@
     align-items: center;
 }
 .uy{
-    padding-top: 8em;
+    padding-top: 12em;
 }
 .pokeinfo{
     box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
@@ -115,7 +115,7 @@
 .pokemon_ability{
     display: flex;
     justify-content: center;
-    gap: 17%;
+    gap: 9%;
     margin-top: 1em;
     text-align: center;
     padding-bottom: 3em;
@@ -128,7 +128,7 @@
 }
 .pokemon_powe{
     display: flex;
-    gap: 10%;
+    gap: 9%;
     justify-content: center;
     width: 118%;
     text-align: center;
