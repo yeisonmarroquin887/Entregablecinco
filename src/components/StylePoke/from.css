@@ -1,9 +1,15 @@
+/*.fromm{
+    background-color: blue;
+    margin-top: -5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cennter;
+}
 .pokemones_form{
     display: flex;
     justify-content: center;
-    margin-bottom: 0.5em;
-    margin-top: -3em;
-}
+} 
 .pokemones_input{
     border: none ;
     box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
@@ -25,28 +31,75 @@
 }
 .pokemon_select{
     background-color: rgb(199, 17, 17);
-    margin-left: 3em;
     text-align: center;
     border-radius: 8px;
     color: white;
-    margin-left: 4em;
+    margin-left: 1em;
+    margin-bottom: 0em;
+    margin-right: 8em;
+    box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
+}*/
+.fromm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5em;
+}
+.pokemones_form{
+    display: flex;
+    justify-content: center;
+}    
+.pokemones_input{
+    border: none ;
+    box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
+    height: 2.3em;
+    width: 70%;
+    border-radius: 0em 0em 0em 0em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pokemones_btn{
+    height: 2.3em;
+    background-color: rgb(233, 3, 3);
+    cursor: pointer;
+    padding: 0.3em 1.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0em 2em 2em 0em;
+    width: 5.5em;
+    text-align: center;
+}
+.pokemon_select{
+    margin-left: 0em;
+    text-align: center;
+    border-radius: 1em 0px 0px 1em;
+    color: rgb(243, 15, 15);
+    border: none;
+    height: 2.3em;
+    width: 5em;
+    background-color: white;
     box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
 }
 @media (min-width: 700px) {
+    .fromm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3em;
+    }
     .pokemones_form{
         display: flex;
         justify-content: center;
-        margin-bottom: em;
     }    
     .pokemones_input{
         border: none ;
         box-shadow: inset 0 -3em 3em rgba(252, 244, 244, 0.226), 0 0 0 0px rgb(210, 232, 245),    0.1em 0.1em 0.4em rgba(41, 39, 39, 0.39);
         height: 2.3em;
         width: 25em;
-        border-radius: 0.7em 0em 0em 0.7em;
+        border-radius: 0em 0em 0em 0em;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-    }
+}
     .pokemones_btn{
         height: 2.3em;
         background-color: rgb(233, 3, 3);
@@ -56,12 +109,15 @@
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 0em 2em 2em 0em;
         width: 7em;
-    }
+}
     .pokemon_select{
-        background-color: rgb(233, 3, 3);
-        margin-left: 3em;
+        margin-left: 0em;
         text-align: center;
-        border-radius: 8px;
-        color: white;
-    }
+        border-radius: 1em 0px 0px 1em;
+        color: rgb(243, 15, 15);
+        border: none;
+        height: 2.3em;
+        width: 10em;
+        background-color: white;
+}
 }

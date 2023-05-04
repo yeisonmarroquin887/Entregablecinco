@@ -6,6 +6,7 @@
     background-color: white  ;
     border: 10px solid wheat;
     transition: transform 150ms ease;
+    margin-top: 2em;
 }
 .pokemon:hover{
     cursor: pointer;
