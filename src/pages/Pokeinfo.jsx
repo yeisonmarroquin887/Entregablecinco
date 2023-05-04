@@ -25,3 +25,4 @@ const Pokeinfo = () => {
 }
 
 export default Pokeinfo
+

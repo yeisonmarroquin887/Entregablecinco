@@ -1,14 +1,14 @@
 .margen{
     background-color: black;
     width: 100%;
-    height: 17vh;
+    height: 14vh;
     position: absolute;
     
 }
 .margen_img{
-    width: 13em;
-    padding: 1.6em;
-    padding-left: 1em;
+    width: 11em;
+    padding: 1.5em;
+    padding-left: -8em;
 }
 .rojo{
     background-color: #DD1A1A;
