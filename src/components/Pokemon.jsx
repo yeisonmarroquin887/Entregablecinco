@@ -39,7 +39,9 @@ const Pokemon = ({pokemon}) => {
             <span className='pokemon_span'>{pokemon?.height}</span>
           </li>
         </ul>
+        <div>
         <section className='pokemon_ability'>
+          
           <span className='pokemon_tipo'>
             <div>tipo</div>
             <div className='pokemon_power'>
@@ -67,8 +69,9 @@ const Pokemon = ({pokemon}) => {
           </span>
         
     
-         
+        
         </section>
+        </div>
       </section>
       </div>
     </div>

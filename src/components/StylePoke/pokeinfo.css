@@ -90,7 +90,7 @@
 .pokemon_id{
     border: 0.1px solid rgb(218, 217, 217);
     height: 10%;
-    width: 5%;
+    width: 10%;
     text-align: center;
     margin-top: 0.5em;
 }
@@ -119,6 +119,8 @@
     margin-top: 1em;
     text-align: center;
     padding-bottom: 3em;
+    background-color: #DD1A1A;
+    padding-right: 1.5em;
 }
 .pokemon_power{
     display: flex;
