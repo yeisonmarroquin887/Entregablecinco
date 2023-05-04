@@ -4,13 +4,9 @@ import Pikachus from '../components/Pikachus'
 import { useSelector } from 'react-redux'
 import './styles/location.css'
 import Frompokes from '../components/Frompokes'
-const LocationPoke = ({form}) => {
+const LocationPoke = () => {
    
- const [geapy, pokemons] = usefetch(form)
- useEffect(() => {
-  geapy()
- },[])
- console.log(pokemons)
+
 
   const url = `https://pokeapi.co/api/v2/pokemon?limit=50&offset=0.`
    const [getallapy, pokemon] = usefetch(url)

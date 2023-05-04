@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef} from 'react'
 import {useNavigate } from 'react-router-dom'
 import usefetch from '../hooks/useFetch'
-import LocationPoke from '../pages/LocationPoke'
 
 const Frompokes = () => {
     
-    const [form, setform] = useState()
+    
     
     const inputpoke = useRef()
     const navigate = useNavigate()
@@ -22,12 +21,11 @@ const Frompokes = () => {
         
  }
  const handelchange = e => {
-  setform(e.target.value)
+  console.log(e.target.value)
  }
 
   return (
     <div>
-      <LocationPoke form={form}/>
        <form onSubmit={handelsubmit}>
         <input ref={inputpoke} className="pokemones_input" type="text" />
         <button className="pokemones_btn">buscar</button>
