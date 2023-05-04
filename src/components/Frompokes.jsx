@@ -2,7 +2,7 @@ import React, { useEffect, useRef} from 'react'
 import {useNavigate } from 'react-router-dom'
 import usefetch from '../hooks/useFetch'
 
-const Frompokes = ({setform}) => {
+const Frompokes = ({setform, urlbase}) => {
     
     
     
@@ -31,7 +31,7 @@ const Frompokes = ({setform}) => {
         <button className="pokemones_btn">buscar</button>
       </form>
       <select onChange={handelchange}>
-        <option value="allPokemons">allPokemosn</option>
+        <option value={urlbase}>allPokemones</option>
         {
           pokemons?.results.map(type =>(
             <option key={type.url} value={type.url}>{type.name}</option>

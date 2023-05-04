@@ -1,15 +1,16 @@
 .pokemon{
-    width: 100%;
-    max-width: 350px;
+    width: 15em;
+    height: 25em;
     border-radius: 0.8em;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white  ;
     border: 10px solid wheat;
+    
 }
 .pokemon__header{
     background-color: rgb(184, 238, 238);
-    height: 165px;
+    height: 104px;
     position: relative;
 }
 .border-grass{
