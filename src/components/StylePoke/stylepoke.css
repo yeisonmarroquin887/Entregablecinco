@@ -1,16 +1,20 @@
 .pokemon{
-    width: 15em;
+    width: 14em;
     height: 25em;
     border-radius: 0.8em;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white  ;
     border: 10px solid wheat;
-    
+    transition: transform 150ms ease;
+}
+.pokemon:hover{
+    cursor: pointer;
+    transform: scale(1.04);
 }
 .pokemon__header{
     background-color: rgb(184, 238, 238);
-    height: 104px;
+    height: 97px;
     position: relative;
 }
 .border-grass{

@@ -19,12 +19,25 @@ const LocationPoke = () => {
 
   return (
     <div className="pokess">
+      <div className="margen">
+        <div className="rojo">
+     
+          <img className="margen_img" src="./image/Podex.png" alt="" />
+        </div>
+        <div className="padre">
+           <div className="bola2">
+            <div className="bola"> <div className="bol"></div> </div>
+           </div>
+          </div>
+        
+      </div>
+      <section className="pokemones_ini">
       <h1 className="pokemones_tittle">
-        Bienvenido<span className="name">{nameuser}</span>, Aqui podras
+        Bienvenido <span className="name">{nameuser}</span>, Aqui podras
         encontrar tu Pokemon favorito
       </h1>
       <section className="pokes">
-      <Frompokes setform={setform}/>
+      <Frompokes setform={setform} urlbase={urlbase}/>
            
       <section className="pokemones">
          {
@@ -45,6 +58,7 @@ const LocationPoke = () => {
       </section>
     
           
+      </section>
       </section>
     </div>
   );

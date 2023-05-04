@@ -1,14 +1,21 @@
 import React, { useEffect } from "react";
 import usefetch from "../hooks/useFetch";
 import "./StylePoke/stylepoke.css";
+import { useNavigate } from "react-router-dom";
 const Pikachus = ({ url }) => {
   const [getpokemones, pokemon] = usefetch(url);
   useEffect(() => {
     getpokemones();
   }, []);
+  
+  const navigate = useNavigate()
+  const handelnavigate = () => {
+     navigate(`/pokedex/${pokemon.name}`)
+  }
+
   return (
     <article className="pokes">
-      <article className={`pokemon border-${pokemon?.types[0].type.name}`}>
+      <article onClick={handelnavigate} className={`pokemon border-${pokemon?.types[0].type.name}`}>
         <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
           <img
             className="pokemon__sprite"
