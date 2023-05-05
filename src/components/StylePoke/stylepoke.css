@@ -36,7 +36,15 @@
     color: #E35825;
 }
 
-
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
  .bg-normal{
      background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);

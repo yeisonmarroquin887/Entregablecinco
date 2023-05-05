@@ -1,6 +1,6 @@
 .is__loading {
     min-height: 100vh;
-
+    border: 3px solid rgb(146, 14, 14);
     display: flex;
     flex-direction: column;
     justify-content: center;
