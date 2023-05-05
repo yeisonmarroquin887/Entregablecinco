@@ -113,6 +113,15 @@ const Pokemon = ({pokemon}) => {
          </section>
       </section>
       </div>
+      <section className='move'>
+        {
+          pokemon?.moves.map(movi => (
+            <div className={`move_movi bg-${pokemon?.types[0].type.name}`}>
+              <span className='move_movis'>{movi.move.name}</span>
+            </div>
+          ))
+        }
+      </section>
     </div>
   )
 }
