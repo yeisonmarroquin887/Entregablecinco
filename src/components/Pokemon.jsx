@@ -18,7 +18,7 @@ const Pokemon = ({pokemon}) => {
       </div>
       <div className='uy'>
       <section className='pokeinfo'>
-        <header className='pokemon_header'>
+        <header className={`pokemon_header bg-${pokemon?.types[0].type.name}`}>
         <img
             className="pokemon_img"
             src={pokemon?.sprites.other["official-artwork"].front_default}
@@ -26,8 +26,8 @@ const Pokemon = ({pokemon}) => {
           />
         </header>
         <section className='pokemon_iden'>
-          <h1 className='pokemon_id'>#{pokemon?.id}</h1>
-          <h1 className='pokemon_name'>{pokemon?.name}</h1>
+          <h1 className={`pokemon_id bg-${pokemon?.types[0].type.name}`}>#{pokemon?.id}</h1>
+          <h1 className={`pokemon_name color-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h1>
         </section>
         <ul className='pokemon_ul'>
           <li className='pokemon_li'>
@@ -47,7 +47,7 @@ const Pokemon = ({pokemon}) => {
             <div className='pokemon_power'>
                {pokemon?.types.map((objType) => (
               
-              <span className='color'>  {objType.type.name}</span>
+              <span className={`color bg-${pokemon?.types[0].type.name}`}>{objType.type.name} </span>
              
            ))}
             </div>
@@ -72,6 +72,45 @@ const Pokemon = ({pokemon}) => {
         
         </section>
         </div>
+         <section>
+          <h1 className='stattt'>Stats</h1>
+          <section>
+            <nav className='stats'>
+              <div className='value0'>
+                  {
+                pokemon?.stats.map(stats => (
+                  <div className='stats_value'>
+                      
+                      <span>{stats.stat.name}:
+                      <div className='porcenta'> <nav className={`porcent bg-${pokemon?.types[0].type.name}`}> <nav className='porce'></nav></nav> </div>
+                       </span>
+                     
+                          
+                  </div>
+                 
+                  
+                ))
+                }
+              </div>
+            
+              <div className='value'>
+                      {
+                pokemon?.stats.map(stats => (
+                  <div className='stats_value'>
+                  <span className={`value color-${pokemon?.types[0].type.name}`}> {stats.base_stat}/150
+             
+                  </span>
+
+                  </div>
+                  
+                ))
+              }
+              </div>
+           
+                  
+            </nav>
+          </section>
+         </section>
       </section>
       </div>
     </div>
