@@ -1,9 +1,13 @@
 import React from 'react'
 import './StylePoke/pokeinfo.css'
+import IsLoading from './IsLoading'
 const Pokemon = ({pokemon}) => {
   console.log(pokemon)
   return (
     <div>
+      {
+        pokemon
+        ? <>
           <div className="margen">
         <div className="rojo">
      
@@ -113,7 +117,10 @@ const Pokemon = ({pokemon}) => {
          </section>
       </section>
       </div>
+      <h1 className={`move_tittle color-${pokemon?.types[0].type.name}`}>moves...</h1>
+      <br />
       <section className='move'>
+        
         {
           pokemon?.moves.map(movi => (
             <div className={`move_movi bg-${pokemon?.types[0].type.name}`}>
@@ -122,6 +129,10 @@ const Pokemon = ({pokemon}) => {
           ))
         }
       </section>
+      </>
+        :<IsLoading/>
+      }
+     
     </div>
   )
 }

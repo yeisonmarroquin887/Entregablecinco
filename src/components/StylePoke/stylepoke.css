@@ -35,6 +35,136 @@
 .color-fire{
     color: #E35825;
 }
+
+
+
+ .bg-normal{
+     background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+ }
+ .color-normal{
+     color:  #735259;
+     
+ }
+ .border-normal{
+     border-color: #7C3F4C;
+ }
+ .bg-fighting{
+  background-image:linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+ }
+ .color-fighting{
+     color: #96402A;
+ }
+ .border-fighting{
+    border-color: #96402A;
+ }
+ .bg-rock{
+     background-image:  linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+ }
+ .color-rock{
+     color: #7E7E7E;
+ }
+ .border-rock{
+     border-color: #7E7E7E;
+ }
+ .bg-bug{
+  background-image:linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+ }
+ .color-bug{
+     color: #31e02e;
+ }
+ .border-bug{
+    border-color: #3BB039;
+ }
+ .bg-ghost{
+    background-image:linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+   }
+   .color-ghost{
+       color: #454AA8;
+   }
+   .border-ghost{
+      border-color: #323569;
+   }
+   .bg-water{
+    background-image:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+   }
+   .color-water{
+       color: #133258 ;
+   }
+   .border-water{
+      border-color: #1479FB;
+   }
+   .bg-electric{
+    background-image:linear-gradient(177.56deg, #60b8db -58.92%, #190ae7 16.57%, #a8eeff 209.53%);
+   }
+   .color-electric{
+       color: #354fe6;
+   }
+   .border-electric{
+      border-color:  #190ae7;
+   }
+   .bg-psychic{
+    background-image:linear-gradient(177.56deg, #c0db60 -58.92%, #d8e70a 16.57%, #f2ffa8 209.53%);
+   }
+   .color-psychic{
+       color: #818633;
+   }
+   .border-psychic{
+      border-color:  #d8e70a;
+   }
+   .bg-ice{
+    background-image:linear-gradient(177.56deg, #be60db -58.92%, #e70adc 16.57%, #ffa8f3 209.53%);
+   }
+   .color-ice{
+       color: #e035e6;
+   }
+   .border-ice{
+      border-color:  #e70adc;
+   }
+   .bg-dragon{
+    background-image:linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+   }
+   .color-dragon{
+       color: #56A4AE ;
+   }
+   .border-dragon{
+      border-color:  #56A4AE ;
+   }
+   .bg-dark{
+    background-image:linear-gradient(177.56deg, #3287a8 -58.92%, #120d4d 16.57%, #a8eeff 209.53%);
+   }
+   .color-dark{
+       color: #09113f;
+   }
+   .border-dark{
+      border-color:  #16106b;
+   }
+   .bg-fairy{
+    background-image:linear-gradient(177.56deg, #a832a2 -58.92%, #bb65b0 16.57%, #fca8ff 209.53%);
+   }
+   .color-fairy{
+       color: #a832a2;
+   }
+   .border-fairy{
+      border-color:  #a832a2;
+   }
+   .bg-poison{
+    background-image:  linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+   }
+   .color-poison{
+       color: #8f4ca3;
+   }
+   .border-poison{
+      border-color:  #5B3184;
+   }
+   .bg-dark{
+    background-image:linear-gradient(177.56deg, #3287a8 -58.92%, #120d4d 16.57%, #a8eeff 209.53%);
+   }
+   .color-dark{
+       color: #09113f;
+   }
+   .border-dark{
+      border-color:  #16106b;
+   }
 .pokemon__sprite{
     width: 60%;
     position: absolute;

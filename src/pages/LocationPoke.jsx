@@ -4,10 +4,15 @@ import { useSelector } from "react-redux";
 import "./styles/location.css";
 import Frompokes from "../components/Frompokes";
 import Pikachus from "../components/Pikachus";
-
+import Pagination from "../components/Pagination";
+import IsLoading from "../components/IsLoading";
 
 const LocationPoke = () => {
-  const urlbase = `https://pokeapi.co/api/v2/pokemon?limit=50&offset=0.`
+
+
+
+
+  const urlbase = `https://pokeapi.co/api/v2/pokemon?limit=9999999999999999999&offset=0.`
   const [form, setform] = useState(urlbase);
   const [getA, pokemones] = usefetch(form);
   useEffect(() => {
@@ -15,10 +20,13 @@ const LocationPoke = () => {
   }, [form]);
   
   const { nameuser } = useSelector((state) => state);
-  
+
 
   return (
     <div className="pokess">
+      {
+        pokemones
+        ?      <>
       <div className="margenn">
         <div className="rojoo">
      
@@ -60,6 +68,10 @@ const LocationPoke = () => {
           
       </section>
       </section>
+      </>
+        :<IsLoading/>
+      }
+
     </div>
   );
 };

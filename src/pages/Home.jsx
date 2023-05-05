@@ -3,6 +3,7 @@ import { useDispatch} from "react-redux";
 import { setname } from "../Store/slices/nameuser.slice";
 import { useNavigate } from "react-router-dom";
 import './styles/home.css'
+import IsLoading from "../components/IsLoading";
 const Home = () => {
 
   const inputName = useRef();
@@ -15,7 +16,10 @@ const Home = () => {
   };
   return (
     <article className="hom">
-    <div className="home">
+      {
+        navigate
+        ? (  <>
+        <div className="home">
       <section className="home_img">
         <img src="./image/Podex.png" alt="" />
       </section>
@@ -28,6 +32,24 @@ const Home = () => {
       </form>
       </section>
     </div>
+
+      <div className="margeni">
+        <div className="rojito">
+        </div>
+        <div className="padreson">
+           <div className="bolaocho">
+            <div className="bolamay"> <div className="bolma"></div> </div>
+           </div>
+          </div>
+          </div>
+          </>
+      )
+        
+        :(<IsLoading/>)
+      }
+    
+  
+
     </article>
   );
 };

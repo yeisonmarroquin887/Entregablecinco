@@ -18,7 +18,7 @@ const Pokeinfo = () => {
         {
             haserror
                ?<Errshrea/> 
-               :<Pokemon pokemon={pokemon}/>
+               :<Pokemon key={pokemon?.id} pokemon={pokemon}/>
         }
     </div>
   )

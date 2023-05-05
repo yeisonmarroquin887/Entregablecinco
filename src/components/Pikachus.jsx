@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import usefetch from "../hooks/useFetch";
 import "./StylePoke/stylepoke.css";
 import { useNavigate } from "react-router-dom";
+import IsLoading from "./IsLoading";
 const Pikachus = ({ url }) => {
   const [getpokemones, pokemon] = usefetch(url);
   useEffect(() => {
@@ -15,7 +16,9 @@ const Pikachus = ({ url }) => {
 
   return (
     <article className="pokes">
-      <article onClick={handelnavigate} className={`pokemon border-${pokemon?.types[0].type.name}`}>
+      {
+        pokemon
+         ?   <article onClick={handelnavigate} className={`pokemon border-${pokemon?.types[0].type.name}`}>
         <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
           <img
             className="pokemon__sprite"
@@ -48,6 +51,9 @@ const Pikachus = ({ url }) => {
           </ul>
         </section>
       </article>
+         : <IsLoading/>
+      }
+   
     </article>
   );
 };
