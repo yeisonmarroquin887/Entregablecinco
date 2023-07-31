@@ -1,7 +1,7 @@
 import React from 'react'
 import './StylePoke/isLoading2.css'
 
-const IsLoading = () => {
+const IsLoading2 = () => {
     return (
         <>
           <div className='is__loading'>
@@ -25,4 +25,4 @@ const IsLoading = () => {
     )
 }
 
-export default IsLoading
+export default IsLoading2
