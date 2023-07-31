@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './StylePoke/pokeinfo.css'
-import IsLoading from './IsLoading'
+import IsLoading from './IsLoading2'
 const Pokemon = ({pokemon}) => {
+  
+  const [loading, setloading] = useState(false)
+
+  useEffect(() => {
+   setTimeout(() => {
+     setloading(true)
+   }, 1800);
+  },[])
+
   console.log(pokemon)
   return (
     <div>
       {
-        pokemon
+        loading
         ? <>
           <div className="margen">
         <div className="rojo">

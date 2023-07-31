@@ -1,10 +1,17 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch} from "react-redux";
 import { setname } from "../Store/slices/nameuser.slice";
 import { useNavigate } from "react-router-dom";
 import './styles/home.css'
 import IsLoading from "../components/IsLoading";
 const Home = () => {
+ const [loading, setloading] = useState(false)
+
+ useEffect(() => {
+  setTimeout(() => {
+    setloading(true)
+  }, 2000);
+ },[])
 
   const inputName = useRef();
   const disoatch = useDispatch();
@@ -13,11 +20,14 @@ const Home = () => {
     e.preventDefault();
     disoatch(setname(inputName.current.value.trim()));
     navigate("./location")
+
+   
+
   };
   return (
     <article className="hom">
       {
-        navigate
+        loading
         ? (  <>
         <div className="home">
       <section className="home_img">

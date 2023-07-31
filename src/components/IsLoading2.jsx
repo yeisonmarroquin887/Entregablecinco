@@ -1,14 +1,13 @@
 import React from 'react'
-import './StylePoke/isLoading.css'
+import './StylePoke/isLoading2.css'
 
 const IsLoading = () => {
     return (
         <>
           <div className='is__loading'>
             <img src="./image/isLoading.png" alt="" />
-            <h1>Is Loading...</h1>
-        </div>
-        <div className="margeni">
+            <h1 className='lodi_title'>Is Loading...</h1>
+            <div className="margeni">
         <div className="rojito">
         </div>
         <div className="padreson">
@@ -17,6 +16,8 @@ const IsLoading = () => {
            </div>
           </div>
           </div>
+        </div>
+
         </>
 
       

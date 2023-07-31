@@ -1,12 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import usefetch from "../hooks/useFetch";
 import "./StylePoke/stylepoke.css";
 import { useNavigate } from "react-router-dom";
-import IsLoading from "./IsLoading";
+import IsLoading from "./Loadingpoke";
 const Pikachus = ({ url }) => {
   const [getpokemones, pokemon] = usefetch(url);
+  const [loading, setloading] = useState(false)
   useEffect(() => {
     getpokemones();
+     setTimeout(() => {
+       setloading(true)
+     }, 5000);
   }, []);
   
   const navigate = useNavigate()
@@ -16,16 +20,22 @@ const Pikachus = ({ url }) => {
 
   return (
     <article className="pokes">
-      {
-        pokemon
-         ?   <article onClick={handelnavigate} className={`pokemon border-${pokemon?.types[0].type.name}`}>
-        <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
-          <img
+      
+        
+          <article onClick={handelnavigate} className={`pokemon border-${pokemon?.types[0].type.name}`}>
+       
+          {
+            loading
+            ? <header className={`pokemon__header bg-${pokemon?.types[0].type.name}`}>
+  <img
             className="pokemon__sprite"
             src={pokemon?.sprites.other["official-artwork"].front_default}
             alt=""
           />
         </header>
+          : <IsLoading/>
+          }
+        
 
         <section className="pokemon__body">
           <h3 className={`pokemon__name color-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
@@ -51,8 +61,8 @@ const Pikachus = ({ url }) => {
           </ul>
         </section>
       </article>
-         : <IsLoading/>
-      }
+       
+      
    
     </article>
   );

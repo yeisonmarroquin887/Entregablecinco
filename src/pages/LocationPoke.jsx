@@ -5,12 +5,17 @@ import "./styles/location.css";
 import Frompokes from "../components/Frompokes";
 import Pikachus from "../components/Pikachus";
 import Pagination from "../components/Pagination";
-import IsLoading from "../components/IsLoading";
+import IsLoading from "../components/IsLoading2";
 
 const LocationPoke = () => {
 
+  const [loading, setloading] = useState(false)
 
-
+  useEffect(() => {
+   setTimeout(() => {
+     setloading(true)
+   }, 2000);
+  },[])
 
   const urlbase = `https://pokeapi.co/api/v2/pokemon?limit=9999999999999999999&offset=0.`
   const [form, setform] = useState(urlbase);
@@ -25,7 +30,7 @@ const LocationPoke = () => {
   return (
     <div className="pokess">
       {
-        pokemones
+        loading
         ?      <>
       <div className="margenn">
         <div className="rojoo">
