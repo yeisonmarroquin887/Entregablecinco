@@ -17,7 +17,7 @@ const LocationPoke = () => {
    }, 2000);
   },[])
 
-  const urlbase = `https://pokeapi.co/api/v2/pokemon?limit=99&offset=0.`
+  const urlbase = `https://pokeapi.co/api/v2/pokemon?limit=200&offset=0.`
   const [form, setform] = useState(urlbase);
   const [getA, pokemones] = usefetch(form);
   useEffect(() => {
