@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './StylePoke/pokeinfo.css'
-import IsLoading from './IsLoading2'
+import IsLoading from './IsLoadingTwo'
 const Pokemon = ({pokemon}) => {
   
   const [loading, setloading] = useState(false)

@@ -5,7 +5,7 @@ import "./styles/location.css";
 import Frompokes from "../components/Frompokes";
 import Pikachus from "../components/Pikachus";
 import Pagination from "../components/Pagination";
-import IsLoading from "../components/IsLoading2";
+import IsLoading from "../components/IsLoadingTwo";
 
 const LocationPoke = () => {
 
