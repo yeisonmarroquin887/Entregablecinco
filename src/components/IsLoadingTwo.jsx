@@ -1,5 +1,5 @@
 import React from 'react'
-import './StylePoke/isLoading2.css'
+import './StylePoke/isloadingtwo.css'
 
 const IsLoadingTwo = () => {
     return (
