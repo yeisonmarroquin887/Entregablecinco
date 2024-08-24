@@ -1,0 +1,151 @@
+.ListPokedex {
+	width: 100%;
+}
+
+.ListPokedex__header {
+	width: 100%;
+}
+
+.ListPokedex__info {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.ListPokedex__info-h1 {
+	font-size: 1em;
+}
+
+.ListPokedex__info-h1 > span {
+	color: var(--color1);
+}
+
+.ListPokedex__filters {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+
+.ListPokedex__filters > div  > form{
+	display: flex;
+}
+
+.ListPokedex__filters > div  > form > input {
+	width: 100%;
+	max-width: 8.8em;
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .3em;
+	border-radius: .2em 0em 0em .2em;
+}
+
+.ListPokedex__filters > div > form > input:focus {
+    border-bottom: 1px solid var(--color1);
+    border-top: 1px solid var(--color1);
+    border-left: 1px solid var(--color1);
+	outline: none;
+}
+
+.ListPokedex__filters > div  > form > button {
+	background-color: var(--color1);
+	color: var(--color2);
+	border: none;
+	padding: .3em;
+	cursor: pointer;
+}
+
+.ListPodex__select {
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .3em;
+	width: 100%;
+	max-width: 11em;
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .3em;
+	border-radius: .1em;
+}
+
+.ListPodex__select:focus {
+    border-color: rgb(230, 228, 228);
+	outline: none;
+}
+
+@media (min-width: 700px) {
+	
+.ListPokedex__info {
+	width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.ListPokedex__info-h1 {
+	font-size: 1.2em;
+	margin-left: 4em;
+	margin-bottom: .3em;
+}
+
+.ListPokedex__info-h1 > span {
+	color: var(--color1);
+}
+
+.ListPokedex__filters {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	max-width: 60em;
+}
+
+.ListPokedex__filters > div  > form{
+	display: flex;
+}
+
+.ListPokedex__filters > div  > form > input {
+	width: 30em;
+	max-width: 18em;
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .7em;
+	border-radius: .2em 0em 0em .2em;
+}
+
+.ListPokedex__filters > div > form > input:focus {
+    border-bottom: 1px solid var(--color1);
+    border-top: 1px solid var(--color1);
+    border-left: 1px solid var(--color1);
+	outline: none;
+}
+
+.ListPokedex__filters > div  > form > button {
+	background-color: var(--color1);
+	color: var(--color2);
+	border: none;
+	padding: .3em;
+	cursor: pointer;
+	width: 8em;
+}
+
+.ListPodex__select {
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .3em;
+	width: 25em;
+	max-width: 101em;
+	border: none;
+	border: 1px solid rgba(230, 225, 225, 0.681);
+	padding: .7em;
+	border-radius: .1em;
+}
+
+.ListPodex__select:focus {
+    border-color: rgb(230, 228, 228);
+	outline: none;
+}
+}

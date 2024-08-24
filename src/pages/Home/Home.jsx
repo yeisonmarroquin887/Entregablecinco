@@ -1,10 +1,15 @@
 import React from "react";
 import './Home.css'
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
 
 function Home(){
+	const {handleSubmit, register, reset} = useForm()
+	const navigate = useNavigate();
 
-	const alerta = () => {
-		alert("Por el momento nuestra app esta en mantenimiento...  ING. Andres Marroquin.")
+	const submit = (data) => {
+			navigate(`/pokedex/${data.Name}`)
 	}
  
 	return (
@@ -17,10 +22,10 @@ function Home(){
 				 
 				 <div className="Home__container-info">
 					<h1>¡Hola Entrenador!</h1>
-					<form className="Home__form" action="">
+					<form className="Home__form" onSubmit={handleSubmit(submit)}>
 						<label htmlFor="">Para empezar dame tu nombre:</label>
-						<input type="text" />
-						<button onClick={alerta}>Comenzar</button>
+						<input {...register("Name")} type="text" required/>
+						<button >Comenzar</button>
 					</form>
 					<p className="text">
 					Que nuestras vidas sean como la de Ash y Pikachu: llenas de aventuras, amistad y sueños por alcanzar.
