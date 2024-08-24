@@ -3,6 +3,10 @@ import './Home.css'
 
 function Home(){
 
+	const alerta = () => {
+		alert("Por el momento nuestra app esta en mantenimiento...  ING. Andres Marroquin.")
+	}
+ 
 	return (
 		<section className="Home">
 			<article className="Home__container">
@@ -16,7 +20,7 @@ function Home(){
 					<form className="Home__form" action="">
 						<label htmlFor="">Para empezar dame tu nombre:</label>
 						<input type="text" />
-						<button>Comenzar</button>
+						<button onClick={alerta}>Comenzar</button>
 					</form>
 					<p className="text">
 					Que nuestras vidas sean como la de Ash y Pikachu: llenas de aventuras, amistad y sueños por alcanzar.
