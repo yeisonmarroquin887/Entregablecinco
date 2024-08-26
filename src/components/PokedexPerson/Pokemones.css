@@ -1,0 +1,7 @@
+.Pokemones {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 1em;
+	justify-content: center;
+}

@@ -4,7 +4,7 @@ import { useState } from "react";
 const Apiurl = import.meta.env.VITE_REACT_APP_URL;
 
 const useApiPokedex = () => {
-	const Url = `${Apiurl}pokemon?limit=20&offset=0`
+	const Url = `${Apiurl}pokemon?limit=500&offset=0`
 	const [Datos, setDatos] = useState(null);
 
 	const PokedexApi = () => {

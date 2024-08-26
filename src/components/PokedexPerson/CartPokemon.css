@@ -1,0 +1,158 @@
+.CartPokemon {
+	width: 100%;
+	max-width: 18em;
+	background-color: aqua;
+	border-radius: .7em;
+	border: 7px solid red;
+}
+
+.CartPokemon_header {
+	background-color: aqua;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1.5em;
+}
+
+.CartPokemon_info {
+	background-color: var(--color2);
+	margin: 10px;
+	margin-top: -3.35em;
+	padding-top: 3em;
+	border-radius: 0em 0em .3em .3em;
+}
+
+.CartPokemon_info-img > img {
+	max-width: 10em;
+}
+
+.CartPokemon_info-titles {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.CartPokemon_info-titles > h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.CartPokemon_info-titles h1::first-letter {
+    text-transform: uppercase;
+}
+
+.CartPokemon_power {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: .8em;
+}
+
+.CartPokemon_power p::first-letter {
+    text-transform: uppercase;
+}
+
+.slash {
+    margin: 0 0.2em;
+    color: black; 
+}
+
+.CartPokemon_info-titles > p {
+	font-size: .6em;
+	margin-top: .5em;
+	border-bottom: .5px solid red;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.CartPokemon_habilite {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style: none;
+	padding: 0em 1em 1.5em 1em;
+}
+
+.CartPokemon_habilite > li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size:.51em;
+	margin-top: 2em;
+	color: red;
+}
+
+.CartPokemon_habilite > li > span {
+	font-size: 1.5em;
+	color: black;
+	margin-top: .4em;
+	font-weight: 600;
+}
+
+@media (min-width: 700px) {
+	.CartPokemon {
+		width: 100%;
+		max-width: 17em;
+		background-color: aqua;
+		border-radius: .7em;
+		border: 7px solid red;
+	}
+	.CartPokemon_info-titles > h1 {
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+	
+	.CartPokemon_info-titles h1::first-letter {
+		text-transform: uppercase;
+	}
+	
+	.CartPokemon_power {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: .9em;
+	}
+	
+	.CartPokemon_power p::first-letter {
+		text-transform: uppercase;
+	}
+	
+	.slash {
+		margin: 0 0.2em;
+		color: black; 
+	}
+	
+	.CartPokemon_info-titles > p {
+		font-size: .7em;
+		margin-top: .5em;
+		border-bottom: .3px solid red;
+		width: 100%;
+		text-align: center;
+		padding-bottom: .5em;
+	}
+	
+	.CartPokemon_habilite {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		list-style: none;
+		padding: 0em 1em 1.5em 1em;
+	}
+	
+	.CartPokemon_habilite > li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: .8em;
+		margin-top: 1.3em;
+		color: red;
+	}
+	
+	.CartPokemon_habilite > li > span {
+		font-size: 1.5em;
+		color: black;
+		margin-top: .3em;
+		font-weight: 600;
+	}
+}

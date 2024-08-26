@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useApiPokedex from "../../Hooks/useApiPokedex";
 import Header from "../../components/Header/Header";
@@ -10,8 +10,7 @@ function ListPokedex() {
 	const {name} = useParams()
     const navigate = useNavigate();
 	const { PokedexApi, Datos } = useApiPokedex()
-
-
+	const [pokemon, setPokemon] = useState([])
 
 	useEffect(() => {
 		PokedexApi()
@@ -26,9 +25,10 @@ function ListPokedex() {
 	const pokes = () => {
 		Datos?.map((ressult) => {
 			axios.get(ressult.url)
-			.then(res => console.log(res.data))
+			.then(res => setPokemon(prevState => [...prevState, res.data]))
 			.catch(err => console.log(err))
 		})
+
 	}
 	const volver = () => {
 		navigate("/")
@@ -57,11 +57,11 @@ function ListPokedex() {
 					</select>
 				</div>
 			</div>
-			<h1>Aplicacion en proceso por el ING: <span style={{color: "red", borderBottom: '1px solid black'}}>Yeison Andres Marroquin.</span> </h1>
+<h1>Aplicacion en proceso por el ING: <span style={{color: "red", borderBottom: '1px solid black'}}>Yeison Andres Marroquin.</span> </h1>
 			</div>
 
 			<div>
-				<Pokemones Datos={Datos}/>
+				<Pokemones Datos={pokemon}/>
 			</div>
 
 		</section>
