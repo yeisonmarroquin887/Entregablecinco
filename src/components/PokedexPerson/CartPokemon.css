@@ -1,23 +1,26 @@
 .CartPokemon {
 	width: 100%;
 	max-width: 18em;
-	background-color: aqua;
 	border-radius: .7em;
-	border: 7px solid red;
+	cursor: pointer;
+	transition: transform 0.3s ease
+}
+
+.CartPokemon:hover {
+	transform: scale(1.02);
 }
 
 .CartPokemon_header {
-	background-color: aqua;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 1.5em;
+	margin-top: 0em;
+	padding-top: 1.5em;
 }
 
 .CartPokemon_info {
 	background-color: var(--color2);
-	margin: 10px;
 	margin-top: -3.35em;
 	padding-top: 3em;
 	border-radius: 0em 0em .3em .3em;
@@ -62,10 +65,11 @@
 .CartPokemon_info-titles > p {
 	font-size: .6em;
 	margin-top: .5em;
-	border-bottom: .5px solid red;
+	border-bottom: .5px solid var(--color5);
 	width: 100%;
 	text-align: center;
 	padding-bottom: 1em;
+	color: var(--color5);
 }
 
 .CartPokemon_habilite {
@@ -81,7 +85,7 @@
 	align-items: center;
 	font-size:.51em;
 	margin-top: 2em;
-	color: red;
+	color: var(--color5);
 }
 
 .CartPokemon_habilite > li > span {
@@ -95,15 +99,25 @@
 	.CartPokemon {
 		width: 100%;
 		max-width: 17em;
-		background-color: aqua;
 		border-radius: .7em;
-		border: 7px solid red;
 	}
+
 	.CartPokemon_info-titles > h1 {
 		font-size: 1.5em;
 		font-weight: 500;
 	}
 	
+	.CartPokemon_info {
+		background-color: var(--color2);
+		margin-top: -3.15em;
+		padding-top: 2.8em;
+		border-radius: 0em 0em .3em .3em;
+	}
+	
+	.CartPokemon_info-img > img {
+		max-width: 9.5em;
+	}
+
 	.CartPokemon_info-titles h1::first-letter {
 		text-transform: uppercase;
 	}
@@ -127,7 +141,6 @@
 	.CartPokemon_info-titles > p {
 		font-size: .7em;
 		margin-top: .5em;
-		border-bottom: .3px solid red;
 		width: 100%;
 		text-align: center;
 		padding-bottom: .5em;
@@ -146,7 +159,6 @@
 		align-items: center;
 		font-size: .8em;
 		margin-top: 1.3em;
-		color: red;
 	}
 	
 	.CartPokemon_habilite > li > span {
