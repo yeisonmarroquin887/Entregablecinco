@@ -8,7 +8,6 @@ function CartPokemon({pokemon}) {
 	const type = pokemon.types[0].type.name
 
 	// console.log(background)
-	console.log(type)
 
 	useEffect(() => {
 		if (type === "fire") {

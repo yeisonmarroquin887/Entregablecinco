@@ -5,12 +5,22 @@ import Header from "../../components/Header/Header";
 import './ListPokedex.css'
 import Pokemones from "../../components/PokedexPerson/Pokemones";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 
 function ListPokedex() {
 	const {name} = useParams()
     const navigate = useNavigate();
 	const { PokedexApi, Datos } = useApiPokedex()
 	const [pokemon, setPokemon] = useState([])
+	const {handleSubmit, register, reset} = useForm()
+
+	const Busqueda = (data) => {
+		pokemon.filter(res => {
+			if(res.name == data.Name){
+				setPokemon(res)
+			}
+		})
+	}
 
 	useEffect(() => {
 		PokedexApi()
@@ -46,8 +56,8 @@ function ListPokedex() {
 			<h1 className="ListPokedex__info-h1"> <span>Bienvenido {name},</span> aqui podras encontrar tu pokemon favorito</h1>
 			<div className="ListPokedex__filters">
 				<div>
-					<form action="">
-						<input type="text" />
+					<form action="" onSubmit={handleSubmit(Busqueda)}>
+						<input {...register("Name")} type="text" placeholder="Busca por nombre 🔎"/>
 						<button>Buscar</button>
 					</form>
 				</div>
@@ -57,7 +67,11 @@ function ListPokedex() {
 					</select>
 				</div>
 			</div>
-<h1>Aplicacion en proceso por el ING: <span style={{color: "red", borderBottom: '1px solid black'}}>Yeison Andres Marroquin.</span> </h1>
+			{/* {
+				<button>Ver todos de nuevo</button>
+			} */}
+			
+{/* <h1>Aplicacion en proceso por el ING: <span style={{color: "red", borderBottom: '1px solid black'}}>Yeison Andres Marroquin.</span> </h1> */}
 			</div>
 
 			<div>
