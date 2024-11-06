@@ -1,0 +1,61 @@
+.PokeMovimient{
+	width: 100%;
+	max-width: 370px;
+	margin: auto;
+	margin-top: 4em;
+	box-shadow: 0px 2px 16px 0px #00000026;
+	margin-bottom: 3rem;
+	padding: 1em;
+}
+
+.Pokemovimient__moves {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-around;
+	gap: .2em;
+	margin-top: 3em;
+}
+
+.Pokemovimient__moves > li {
+	background-color: var(--color5);
+	text-align: center;
+	margin-bottom: .7em;
+	padding: .5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1em;
+}
+
+@media (min-width: 600px) {
+	.PokeMovimient{
+		width: 100%;
+		max-width: 700px;
+		margin: auto;
+		margin-top: 4em;
+		box-shadow: 0px 2px 16px 0px #00000026;
+		margin-bottom: 3rem;
+		padding: 2.5em;
+	}
+	
+	.Pokemovimient__moves {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+		gap: .2em;
+		margin-top: 3em;
+	}
+	
+	.Pokemovimient__moves > li {
+		background-color: var(--color5);
+		text-align: center;
+		margin-bottom: .7em;
+		padding: .5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1em;
+	}
+}

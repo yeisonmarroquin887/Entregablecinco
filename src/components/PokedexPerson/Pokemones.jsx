@@ -3,7 +3,7 @@ import CartPokemon from "./CartPokemon";
 import './Pokemones.css'
 
 function Pokemones({Datos}) {
-	console.log(Datos)
+	
 	return (
 		<section className="Pokemones">
 		 {Array.isArray(Datos) ? (

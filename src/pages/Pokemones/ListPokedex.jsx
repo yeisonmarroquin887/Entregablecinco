@@ -15,6 +15,7 @@ function ListPokedex() {
     const [pokemonCategory, setpokemonCategory] = useState([]);
     const { handleSubmit, register, reset } = useForm();
 
+
     const Busqueda = (data) => {
         const filteredPokemon = pokemon.filter(res => res.name === data.Name);
         setPokemon(filteredPokemon);
@@ -29,8 +30,8 @@ function ListPokedex() {
             pokes();
         }
     }, [Datos]);
-
     const pokes = () => {
+        
         Datos?.map((ressult) => {
             axios.get(ressult.url)
                 .then(res => {
@@ -39,12 +40,13 @@ function ListPokedex() {
 				})
                 .catch(err => console.log(err));
         });
+        
     };
 
     const volver = () => {
         navigate("/");
+        localStorage.removeItem("Name")
     };
-
     let raz = new Set();
     pokemonCategory.forEach(res => {
         raz.add(res.types[0].type.name);
@@ -66,8 +68,9 @@ function ListPokedex() {
             <div className="ListPokedex__header">
                 <Header />
             </div>
-
-            <button onClick={volver}>Volver</button>
+            <div className="Volver">
+            <button  onClick={volver}>Salir</button>
+            </div>
 
             <div className="ListPokedex__info">
                 <h1 className="ListPokedex__info-h1"> <span>Bienvenido {name},</span> aquí podrás encontrar tu Pokémon favorito</h1>

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import './CartPokemon.css'
+import { useNavigate } from "react-router-dom";
 
 function CartPokemon({pokemon}) {
 
 	const [background, setBackground] = useState("");
 	const [colors, setColors] = useState("");
 	const type = pokemon.types[0].type.name
+	const navigate = useNavigate();
 
 	// console.log(background)
 
@@ -69,8 +71,12 @@ function CartPokemon({pokemon}) {
 		}
 	  }, [type]);
 
+	  const navigatePokemon = (id) => {
+		navigate(`/pokemon/${id}`)
+	  }
+
 	return (
-		<article className="CartPokemon" style={{border: `7px solid ${colors}`}}>
+		<article className="CartPokemon" style={{border: `7px solid ${colors}`}} onClick={() => navigatePokemon(pokemon.id)}>
 		<div className="CartPokemon_header" style={{background }}>
 			<figure className="CartPokemon_info-img">
 				<img src={pokemon.sprites.other["official-artwork"].front_default} alt="" />

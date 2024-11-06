@@ -1,0 +1,26 @@
+
+
+.Volver > button {
+	background-color: var(--color3);
+	color: var(--color1);	
+	border: none;
+	padding: .3em;
+	font-size: 1em;
+	width: 100%;
+	max-width: 8em;
+	border-top: 3px solid var(--color3);
+	border-right: 3px solid var(--color3);
+	border-bottom: 3px solid var(--color3);
+	position: fixed;
+	border-radius: 0em .3em .3em 0em;
+	cursor: pointer;
+	transition: color 1000ms ease;
+	z-index: 1000;
+}
+
+.Volver > button:hover {
+	color: var(--color2);
+	border-bottom: 3px solid var(--color1);
+	border-top: 3px solid var(--color1);
+	border-right: 3px solid var(--color1);
+}

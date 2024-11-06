@@ -9,6 +9,7 @@ function Home(){
 	const navigate = useNavigate();
 
 	const submit = (data) => {
+		localStorage.setItem("Name", data.Name)
 			navigate(`/pokedex/${data.Name}`)
 	}
  

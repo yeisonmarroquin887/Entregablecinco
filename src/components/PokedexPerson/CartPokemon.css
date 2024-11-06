@@ -6,6 +6,10 @@
 	transition: transform 0.3s ease
 }
 
+.pokeinfo {
+	display: none;
+}
+
 .CartPokemon:hover {
 	transform: scale(1.02);
 }
