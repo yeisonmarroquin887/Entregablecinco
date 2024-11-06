@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './PokeInfoId.css'
+import './PokeinfoId.css'
 
 function PokeInfoId({ Data }) {
 	const [background, setBackground] = useState("");
